@@ -1,0 +1,188 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <ul>
+                <li><a href="/"><span>Главная страница</span></a></li>
+                <li><span>Программа лояльности</span></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs__items -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.breadcrumbs -->
+        
+       <div class="pagebanner pagebanner_type2">
+        <div class="container">
+          <div class="pagebanner__wrapper" style='background-image: url(img/pagebannerbg_type2.png);'>
+            <div class="pagebanner__content">
+              <div class="pagebanner__left">
+                <div class="pagebanner__main">
+                  <div class="pagebanner__title">
+                    Экономьте   <span class="mark">до 20%</span> <br> получайте кэшбек и оплачивайте <br> покупки бонусами
+                
+                  </div><!-- /.pagebanner__title -->
+                  <div class="pagebanner__text">
+                    с нашей виртуальной картой лояльности
+                  </div><!-- /.pagebanner_-text -->
+                </div><!-- /.pagebanner__main -->
+              </div><!-- /.pagebanner__left -->
+              <div class="pagebanner__right">
+                <div class="pagebanner__image">
+                  <div class="pagebanner__img">
+                    <img src="img/woman.png" alt="">
+                  </div><!-- /.pagebanner__img -->
+                </div><!-- /.pagebanner__image -->
+              </div><!-- /.pagebanner__righ -->
+            </div><!-- /.pagebanner__content -->
+          </div><!-- /.pagebanner__wrapper -->
+        </div><!-- /.container -->
+       </div><!-- /.pagebanner -->
+
+
+       <div class="pageblocksl recipeslider">
+        <div class="container">
+          <div class="blockheader">
+            <div class="blockheader__left">
+              <h2>Получайте максимум выгоды от программы лояльности</h2>
+            </div>
+          </div>
+          <div class="fitchesblock fitchesblock_type3">
+            <div class="fitchesblock__items">
+              <div class="fitchesblock__item slide-in-bottom wow" data-wow-delay="0.1s" data-wow-offset="0" data-wow-duration="1.5s" >
+                <div class="fitchesblock__wrapper">
+                  <div class="fitchesblock__header">
+                    <div class="fitchesblock__icon">
+                      <div class="fitchesblock__img">
+                        <div class="fitchesblock__number">01</div>
+                      </div>
+                      <!-- /.fitchesblock__img -->
+                    </div><!-- /.fitchesblock__icon -->
+                    <div class="fitchesblock__title">Бонусы</div>
+                    <!-- /.fitchesblock__title -->
+                  </div><!-- /.fitchesblock__header -->
+                  <div class="fitchesblock__main">
+                    <div class="fitchesblock__content">Используйте бонусы для оплаты  <br> до 20% от общей суммы заказа. <br>
+                     <b>1 бонус = 1 рубль</b> </div>
+                    <!-- /.fitchesblock__content -->
+                  </div><!-- /.fitchesblock__main -->
+                </div><!-- /.fitchesblock__wrapper -->
+              </div><!-- /.fitchesblock__item -->
+              <div class="fitchesblock__item slide-in-bottom wow" data-wow-delay="0.4s" data-wow-offset="0" data-wow-duration="1.5s" >
+                <div class="fitchesblock__wrapper">
+                  <div class="fitchesblock__header">
+                    <div class="fitchesblock__icon">
+                      <div class="fitchesblock__img">
+                        <div class="fitchesblock__number">02</div>
+                      </div>
+                      <!-- /.fitchesblock__img -->
+                    </div><!-- /.fitchesblock__icon -->
+                    <div class="fitchesblock__title">Накопление <br> покупок</div><!-- /.fitchesblock__title -->
+                  </div><!-- /.fitchesblock__header -->
+                  <div class="fitchesblock__main">
+                    <div class="fitchesblock__content">При накоплении покупок на <br> сумму от 30 000 ₽ возвращаем 5%, <br> от 60 000 ₽ — 10%</div><!-- /.fitchesblock__content -->
+                  </div><!-- /.fitchesblock__main -->
+                </div><!-- /.fitchesblock__wrapper -->
+              </div><!-- /.fitchesblock__item -->
+              <div class="fitchesblock__item slide-in-bottom wow" data-wow-delay="0.7s" data-wow-offset="0" data-wow-duration="1.5s" >
+                <div class="fitchesblock__wrapper">
+                  <div class="fitchesblock__header">
+                    <div class="fitchesblock__icon">
+                      <div class="fitchesblock__img">
+                        <div class="fitchesblock__number">03</div>
+                      </div>
+                      <!-- /.fitchesblock__img -->
+                    </div><!-- /.fitchesblock__icon -->
+                    <div class="fitchesblock__title">Кэшбек</div>
+                    <!-- /.fitchesblock__title -->
+                  </div><!-- /.fitchesblock__header -->
+                  <div class="fitchesblock__main">
+                    <div class="fitchesblock__content">С первого заказа вернем 30% суммы <br> бонусами, с последующих — от  3% <br>до 10%</div><!-- /.fitchesblock__content -->
+                  </div><!-- /.fitchesblock__main -->
+                </div><!-- /.fitchesblock__wrapper -->
+              </div><!-- /.fitchesblock__item -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pageblocksl">
+        <div class="container">
+         
+          <div class="flex bonusblock items-end">
+            <div class="bonusblock__content">
+              <div class="bonusblock__title">Станьте владельцем <br> бонусной карты в 2 клика</div>
+              <div class="bonusblock__text">После регистрации в личном кабинете сайта вы получите:</div><!-- /.bonusblock__text -->
+                <div class="bonusblock__items">
+                  <div class="bonusblock__item">
+                    <div class="bonusblock__icon">
+                      <div class="bonusblock__img"><img src="img/bonusblock1.svg" alt=""></div>
+                    </div><!-- /.bonusblock__icon -->
+                    <div class="bonusblock__caption">Более выгодные акции</div>
+                  </div><!-- /.bonusblock__item -->
+                  <div class="bonusblock__item">
+                    <div class="bonusblock__icon">
+                      <div class="bonusblock__img"><img src="img/bonusblock2.svg" alt=""></div>
+                    </div><!-- /.bonusblock__icon -->
+                    <div class="bonusblock__caption">Скидки на день рождения и праздники</div>
+                  </div><!-- /.bonusblock__item -->
+                  <div class="bonusblock__item">
+                    <div class="bonusblock__icon">
+                      <div class="bonusblock__img"><img src="img/bonusblock3.svg" alt=""></div>
+                    </div><!-- /.bonusblock__icon -->
+                    <div class="bonusblock__caption">Подарки и распродажи</div>
+                  </div><!-- /.bonusblock__item -->
+                  <div class="bonusblock__item">
+                    <div class="bonusblock__icon">
+                      <div class="bonusblock__img"><img src="img/bonusblock4.svg" alt=""></div>
+                    </div><!-- /.bonusblock__icon -->
+                    <div class="bonusblock__caption">Рассылку с новинками в ассортименте</div>
+                  </div><!-- /.bonusblock__item -->
+                </div><!-- /.bonusblock__items -->
+                <div class="bonusblock__footer">
+                  <div class="bonusblock__button">
+                    <a href="" class="btn_border">Оформить карту лояльности</a><!-- /.btn_border -->
+                  </div><!-- /.bonusblock__button -->
+                  <div class="bonusblock__small">
+                    При регистрации отметьте галочкой: <br> хочу участвовать в бонусной программе
+                  </div><!-- /.bonusblock__small -->
+                </div><!-- /.bonusblock__footer -->
+           
+            </div><!-- /.bonusblock__content -->
+            <div class="image">
+              <img src="img/telefon2.png" alt="">
+            </div><!-- /.image -->
+          </div><!-- /.flex -->
+        </div>
+      </div>
+
+      
+       <div class="pageblocksl">
+        <div class="bannerblock bannerblock_large bannerblock_bg">
+          <div class="container">
+            <div class="bannerblock__wrapper">
+              <div class="bannerblock__items">
+                <div class="bannerblock__item bannerblock__item_main">
+                  <div class="bannerblock__title">Уже есть карта лояльности?</div>
+                  <div class="bannerblock__text">Проверте бонусы на счету в личном кабинете. <br>
+                    Не забывайте использовать карту при каждой покупке</div><!-- /.bannerblock__text -->
+                </div><!-- /.bannerblock__item -->
+                <div class="bannerblock__item bannerblock__item_aside">
+                  <div class="bannerblock__button"><a href="#modal_login" data-toggle="modal" class="btn_white">Перейти в личный кабинет</a></div><!-- /.bannerblock__button -->
+                </div><!-- /.bannerblock__item bannerblock__item_button -->
+              </div><!-- /.bannerblock__items -->
+            </div><!-- /.bannerblock__wrapper -->
+          </div><!-- /.container -->
+        </div>
+       </div>
+     
+    
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

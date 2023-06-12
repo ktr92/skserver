@@ -1,0 +1,186 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> 
+  <style>
+    [data-toggle='modal'] {margin-bottom: 5px;}
+  </style>
+  <main>
+  <div class="container">
+    <a href="#modal_info" data-toggle='modal' class=" btn_main">Условия возврата товара</a>
+    <a href="#popup_addproduct" data-toggle='modal' class=" btn_main">Добавление в корзину </a>
+    <a href="#modal_login" data-toggle='modal' class=" btn_main">Вход в личный кабинет </a>
+    <a href="#modal_reg" data-toggle='modal' class=" btn_main">Регистрация </a>
+   
+    <span id="showsuccess" class="btn_main">Success</span>
+    <script>
+      $('#showsuccess').on('click', function() {
+        $('#modal_success').modal('show')
+      })
+    </script>
+    <br>
+    <br>
+  </div>
+  <!-- /.container -->
+</main>
+
+<div class="modal  fade " tabindex="-1" role="dialog" id="popup_addproduct">
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title text-left">Товар добавлен в корзину</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
+        </button>
+        <div class="modal__content modal__product">
+          <div class="cartproduct">
+            <div class="cartproduct__image">
+             
+              <div class="cartproduct__img">
+                <img src="img/card2.png" alt="" width="100" height="100">
+              </div><!-- /.cartproduct__img -->
+            </div><!-- /.cartproduct__image -->
+            <div class="cartproduct__info">
+              <div class="cartproduct__title"><a href="">Стейки трески</a></div>
+              <!-- /.cartproduct__title -->
+              <div class="cartproduct__params">
+                <div class="cartproduct__param cartproduct__param_default">Количество - 1 шт</div><!-- /.cartproduct__param -->
+                <div class="cartproduct__param cartproduct__param_price">399 ₽ / уп</div><!-- /.cartproduct__param -->
+              </div><!-- /.cartproduct__params -->
+            </div><!-- /.cartproduct__info -->
+          </div>
+        </div><!-- /.modal__product -->
+        <div class="modal__buttons">
+          <div class="modal__button">
+            <a href="#" class="btn_main">Перейти в корзину</a>
+          </div><!-- /.modal__button -->
+          <div class="modal__button">
+            <a href="#" class="btn_border">Вернуться к покупкам</a>
+          </div><!-- /.modal__button -->
+        </div><!-- /.modal__buttons -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal  fade " tabindex="-1" role="dialog" id="modal_login">
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title ">Вход в личный кабинет</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
+        </button>
+        <div class="modal__content ">
+          <div class="modal__form">
+            <form action="">
+              <div class="formblock">
+                <div class="formblock__input"><input type="text" placeholder="Номер телефона/e-mail"></div>
+                <div class="formblock__button"><button type="submit" class="btn_main w-full">Авторизоваться</button></div>
+                <div class="formblock__info">
+                  Еще нет аккаунта? <a href="">Зарегистрируйтесь</a> 
+                </div><!-- /.formblock__info -->
+                <div class="formblock__confirm">
+                  Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                </div>
+              </div><!-- /.formblock -->
+            </form>
+          </div><!-- /.modal__form -->
+        </div><!-- /.modal__product -->
+       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal  fade " tabindex="-1" role="dialog" id="modal_reg">
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title ">Регистрация</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
+        </button>
+        <div class="modal__content ">
+          <div class="modal__form">
+            <form action="">
+              <div class="formblock">
+                <div class="formblock__input"><input type="email" placeholder="E-mail"></div>
+                <div class="formblock__input"><input type="tel" placeholder="+7 (999)-999-99-99"></div>
+                <div class="formblock__input"><input type="password" placeholder="Пароль"></div>
+                <div class="formblock__button"><button type="submit" class="btn_main w-full">Подтвердить</button></div>
+                <div class="formblock__info">
+                  <a href="">Авторизоваться</a> 
+                </div><!-- /.formblock__info -->
+                <div class="orderform__inputcol orderform__inputcol_full">
+                  <div class="check">
+                    <input type="checkbox" id="agree" checked="checked" value="Y">
+                    <label for="agree">Я соглашаюсь с условиями  <a href=""> Политики конфиденциальности</a> и <a href="">Обработки персональных данных</a> 
+                    </label>
+                  </div>
+                </div>
+                <div class="orderform__inputcol orderform__inputcol_full">
+                  <div class="check">
+                    <input type="checkbox" id="sub" checked="checked" value="Y">
+                    <label for="sub">Хочу участвовать в бонусной программе
+                    </label>
+                  </div>
+                </div>
+              </div><!-- /.formblock -->
+            </form>
+          </div><!-- /.modal__form -->
+        </div><!-- /.modal__product -->
+       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_type2 fade" tabindex="-1" role="dialog" id='modal_info'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title">Условия возврата товара</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modalcontent">
+            <p>Для возврата денежных средств Вам нужно связаться с менеджером по телефону <a href="tel:+7 495 445 25 55">+7 495 445 25 55</a></p>
+            <p>Срок рассмотрения заявки на возврат денежных средств составляет «10» дней (срок устанавливается магазином). Возврат денежных средств осуществляется на ту же банковскую карту,
+              с которой производился платеж. Возврат денежных средств на карту осуществляется в срок от 5 до 30 банковских дней, в зависимости от Банка, которым была выпущена банковская карта.</p>
+
+              <p>Если вы обнаружили признаки некачественной продукции:</p>
+
+              <p>1. Сообщите нам об этом,позвонив по номеру телефона: <a href="tel:+7 495 445 25 55">+7 495 445 25 55</a></p>
+
+              <p>2. Менеджер свяжется с Вами и договорится о дате и времени прибытия курьера для обмена товара или возврата денежных средств.</p>
+          </div><!-- /.modalcontent -->
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal  fade" tabindex="-1" role="dialog" id='modal_success'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title">Спасибо!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modalcontent">
+            <p class="text-center">Ваша заявка успешно отправлена</p>
+          </div><!-- /.modalcontent -->
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= _.template(require('../includes/footer.html').default)(data) %>

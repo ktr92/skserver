@@ -1,0 +1,322 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <ul>
+                <li><a href="/"><span>Главная страница</span></a></li>
+                <li><a href="/"><span>Персональный раздел</span></a></li>
+                <li><span>Корзина</span></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs__items -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.breadcrumbs -->
+        <div class="container">
+
+          <div class="orderpage orderform">
+            <form action="">
+              <div class="orderblock">
+                <div class="orderblock__main">
+                  <div class="ordermain">
+                    <div class="orderform__content">
+                      <div class="orderform__blocks">
+                        <div class="orderform__block">
+                          <div class="infocard">
+                            <div class="infocard__title">Выберите способ доставки:</div>
+                            <div class="orderform__input">
+                              <label for="radio_1" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_1' name='delivery' checked>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">Курьером по Москве в пределах МКАД — <span
+                                      class='nowrap'>350 ₽</span></span><!-- /.orderform__name -->
+                                  <div class="orderform__tedt">Бесплатная доставка от 2000 ₽</div>
+                                  <!-- /.orderform__tedt -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+                            <div class="orderform__input">
+                              <label for="radio_2" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_2' name='delivery'>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">Курьером по Московской области (5-20 км от МКАД) — <span
+                                      class='nowrap'>50 ₽/км</span></span><!-- /.orderform__name -->
+                                  <div class="orderform__tedt">Минимальная сумма заказа 3000 ₽</div>
+                                  <!-- /.orderform__tedt -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+                            <div class="orderform__input">
+                              <label for="radio_3" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_3' name='delivery'>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">Курьером по Московской области (20-50 км от МКАД) —
+                                    <span class='nowrap'>50 ₽/км</span></span><!-- /.orderform__name -->
+                                  <div class="orderform__tedt">Минимальная сумма заказа 6000 ₽</div>
+                                  <!-- /.orderform__tedt -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+                          </div>
+                        </div>
+                        <div class="orderform__block">
+                          <div class="infocard">
+                            <div class="infocard__title">Выберите способ оплаты:</div>
+                            <div class="orderform__input">
+                              <label for="radio_21" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_21' name='payment' checked>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">Наличными при получении</span><!-- /.orderform__name -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+                            <div class="orderform__input">
+                              <label for="radio_22" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_22' name='payment'>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">Картой при получении</span><!-- /.orderform__name -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+                            <div class="orderform__input">
+                              <label for="radio_23" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_23' name='payment'>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">По QR-коду через приложение
+                                    банка</span><!-- /.orderform__name -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+                            <div class="orderform__input">
+                              <label for="radio_24" class='radioinput formcheckbox'>
+                                <input type="radio" id='radio_24' name='payment'>
+                                <span class="checkmark"></span>
+                                <div class="ordeform__inputcontent">
+                                  <span class="orderform__name">Оплата онлайн на сайте</span><!-- /.orderform__name -->
+                                </div><!-- /.ordeform__inputcontent -->
+
+                              </label>
+                            </div><!-- /.orderform__input -->
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="orderform__block formblock">
+                        <div class="infocard">
+                          <div class="infocard__title">Укажите ваши данные и адрес доставки:</div>
+                          <div class="orderform__inputrow">
+                            <div class="orderform__inputcol orderform__inputcol_full formblock__input">
+                              <div class="orderform__input">
+                                <input type="text" placeholder='Ваше имя*'>
+                              </div>
+                            </div>
+                            <div class="orderform__inputcol orderform__inputcol_full formblock__input">
+                              <div class="orderform__input">
+                                <input type="email" placeholder='E-mail (пришлем электронный чек)*'>
+                              </div>
+                            </div>
+                            <div class="orderform__inputcol orderform__inputcol_full formblock__input">
+                              <div class="orderform__input">
+                                <input type="tel" placeholder='+7 (999)-999-99-99*'>
+                              </div>
+                            </div>
+                            <div class="orderform__inputcol orderform__inputcol_full formblock__input">
+                              <div class="orderform__input">
+                                <input type="text" placeholder='Адрес*'>
+                              </div>
+                            </div>
+                            <div class="orderform__inputcol orderform__inputcol_full formblock__input">
+                              <div class="orderform__input">
+                                <textarea rows="5" placeholder='Комментарий к заказу'></textarea><!-- /# -->
+                              </div>
+                            </div>
+
+                            <div class="orderform__inputcol orderform__inputcol_full">
+                              <div class="check">
+                                <input type="checkbox" id="agree" checked="checked" value="Y">
+                                <label for="agree">Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку
+                                  моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года
+                                  №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на
+                                  обработку персональных данных
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="orderform__inputcol orderform__inputcol_full">
+                              <div class="check">
+                                <input type="checkbox" id="sub" checked="checked" value="Y">
+                                <label for="sub">Подписаться на рассылку спец. предложений
+                                </label>
+                              </div>
+                            </div>
+                            <div class="orderform__inputcol orderform__inputcol_full">
+                              <div class="orderform__submit">
+                                <button type='submit' class='btn_main btn_full'>Оформить заказ</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="orderblock__aside cartblock__aside">
+                  <aside>
+                    <div class="infocard carttotal" id="asidetotal">
+                      <div class="carttotal__title">Ваш заказ </div>
+                      <div class="carttotal__products">
+                        <div class="carttotal__product">
+                          <div class="carttotal__items">
+                            <div class="carttotal__item carttotal__item_image">
+                              <div class="cartproduct">
+                                <div class="cartproduct__image">
+                                  <div class="productcard__stickers">
+                                    <div class="productcard__sticker">
+                                      <div class="productsticker productsticker_orange">
+                                        <span class="productsticker__text">-20%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cartproduct__img">
+                                    <img src="img/card2.png" alt="" width='60' height='60'>
+                                  </div><!-- /.cartproduct__img -->
+                                </div><!-- /.cartproduct__image -->
+                                <div class="cartproduct__info">
+                                  <div class="cartproduct__title"><a href="">Стейки трески</a></div>
+                                  <!-- /.cartproduct__title -->
+                                  <div class="cartproduct__params">
+                                    <div class="cartproduct__param">500 г</div><!-- /.cartproduct__param -->
+                                  </div><!-- /.cartproduct__params -->
+                                </div><!-- /.cartproduct__info -->
+                              </div><!-- /.cartproduct -->
+                            </div><!-- /.carttotal__item carttotal__item_image -->
+                            <div class="carttotal__item carttotal__item_count">
+                              1 шт.
+                            </div><!-- /.carttotal__item carttotal__item_count -->
+                            <div class="carttotal__item carttotal__item_price">
+                              299 ₽
+                            </div><!-- /.carttotal__item carttotal__item_price -->
+                          </div><!-- /.carttotal__items -->
+                        </div><!-- /.carttotal__product -->
+                        <div class="carttotal__product">
+                          <div class="carttotal__items">
+                            <div class="carttotal__item carttotal__item_image">
+                              <div class="cartproduct">
+                                <div class="cartproduct__image">
+                                  <div class="productcard__stickers">
+                                    <div class="productcard__sticker">
+                                      <div class="productsticker productsticker_orange">
+                                        <span class="productsticker__text">-20%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cartproduct__img">
+                                    <img src="img/card2.png" alt="" width='60' height='60'>
+                                  </div><!-- /.cartproduct__img -->
+                                </div><!-- /.cartproduct__image -->
+                                <div class="cartproduct__info">
+                                  <div class="cartproduct__title"><a href="">Стейки трески</a></div>
+                                  <!-- /.cartproduct__title -->
+                                  <div class="cartproduct__params">
+                                    <div class="cartproduct__param">500 г</div><!-- /.cartproduct__param -->
+                                  </div><!-- /.cartproduct__params -->
+                                </div><!-- /.cartproduct__info -->
+                              </div><!-- /.cartproduct -->
+                            </div><!-- /.carttotal__item carttotal__item_image -->
+                            <div class="carttotal__item carttotal__item_count">
+                              1 шт.
+                            </div><!-- /.carttotal__item carttotal__item_count -->
+                            <div class="carttotal__item carttotal__item_price">
+                              299 ₽
+                            </div><!-- /.carttotal__item carttotal__item_price -->
+                          </div><!-- /.carttotal__items -->
+                        </div><!-- /.carttotal__product -->
+                        <div class="carttotal__product">
+                          <div class="carttotal__items">
+                            <div class="carttotal__item carttotal__item_image">
+                              <div class="cartproduct">
+                                <div class="cartproduct__image">
+                                  <div class="productcard__stickers">
+                                    <div class="productcard__sticker">
+                                      <div class="productsticker productsticker_orange">
+                                        <span class="productsticker__text">-20%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cartproduct__img">
+                                    <img src="img/card2.png" alt="" width='60' height='60'>
+                                  </div><!-- /.cartproduct__img -->
+                                </div><!-- /.cartproduct__image -->
+                                <div class="cartproduct__info">
+                                  <div class="cartproduct__title"><a href="">Дорадо потрошеная с головой, без чешуи</a>
+                                  </div>
+                                  <!-- /.cartproduct__title -->
+                                  <div class="cartproduct__params">
+                                    <div class="cartproduct__param">500 г</div><!-- /.cartproduct__param -->
+                                  </div><!-- /.cartproduct__params -->
+                                </div><!-- /.cartproduct__info -->
+                              </div><!-- /.cartproduct -->
+                            </div><!-- /.carttotal__item carttotal__item_image -->
+                            <div class="carttotal__item carttotal__item_count">
+                              111 шт.
+                            </div><!-- /.carttotal__item carttotal__item_count -->
+                            <div class="carttotal__item carttotal__item_price">
+                              1 129 ₽
+                            </div><!-- /.carttotal__item carttotal__item_price -->
+                          </div><!-- /.carttotal__items -->
+                        </div><!-- /.carttotal__product -->
+                      </div><!-- /.carttotal__products -->
+                      <div class="carttotal__summary">
+                        <ul class="product-params">
+                          <li>
+                            <span class="product-params_left">
+                              <span><span>Товаров на:</span></span>
+                            </span>
+                            <span class="product-params_right">2 746 ₽ </span>
+                          </li>
+                          <li>
+                            <span class="product-params_left">
+                              <span><span>Ваша скидка:</span></span>
+                            </span>
+                            <span class="product-params_right">200 ₽ </span>
+                          </li>
+                          <li>
+                            <span class="product-params_left">
+                              <span><span>Доставка:</span></span>
+                            </span>
+                            <span class="product-params_right">350 ₽ </span>
+                          </li>
+                          
+                        </ul>
+                      </div><!-- /.carttotal__summary -->
+
+                      <div class="carttotal__message">
+                        614 ₽ до бесплатной доставки
+                      </div><!-- /.carttotal__message -->
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="stopblock"></div><!-- /.stopblock -->
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
