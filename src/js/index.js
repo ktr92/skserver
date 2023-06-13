@@ -1,6 +1,6 @@
 
 function initFE() {
-  fixElement(300, false, 'headermain', 'fixed')
+  fixElement(300, false, 'headermain', 'scroll')
   /*   cardImagesSlider() */
   /*   menuInit() */
 /*   mainSliderInit()
