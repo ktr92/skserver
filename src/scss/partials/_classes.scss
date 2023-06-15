@@ -330,6 +330,66 @@ transition: all 0.3s ease;
  /*  max-height: initial; */
 }
 
+.breadcrumbs {
+  margin: 50px 0 23px 0; }
+
+.breadcrumbs__items ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.breadcrumbs__items ul li {
+  position: relative;
+  padding-right: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.breadcrumbs__items ul li:after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  width: 6px;
+height: 6px;
+top: 12px;
+
+background: #687494;
+ }
+
+.breadcrumbs__items ul li:last-child:after {
+  display: none; }
+.breadcrumbs__items ul li:nth-last-child(2):after {
+  background: $blue; }
+
+.breadcrumbs__items ul img {
+  line-height: 1;
+  vertical-align: bottom; }
+
+.breadcrumbs__items ul span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #FFFFFF; }
+
+.breadcrumbs__items ul a span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  /* identical to box height, or 29px */
+  
+  
+  
+  color: rgba(104, 116, 148, 0.5)
+
+}
+  .breadcrumbs__items ul a span:hover {
+    color: rgba(104, 116, 148, 1)
+  }
+
+
 @media (max-width: 1023px) {
   .mobile-full {
     width: 100% !important;

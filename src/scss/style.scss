@@ -1172,3 +1172,66 @@ color: #FFFFFF;
 .seoblock__cols {
   align-items: center;
 }
+
+.arrowlink:hover {
+  transition: all 0.3s ease;
+  border-color: $blue;
+}
+
+
+main {
+  min-height: 500px;
+}
+
+.innerpage {
+  padding-top: $header_height;
+
+
+}
+
+.innerpage__header {
+  margin-bottom: 75px;
+
+  h1 {
+    font-style: normal;
+font-weight: 900;
+font-size: 52px;
+line-height: 100%;
+/* identical to box height, or 52px */
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 0;
+color: #FFFFFF;
+  }
+}
+
+.footer {
+  border-top: 2px solid rgba(255,255,255,0.05);
+}
+.catalogpage {
+position: relative; 
+padding-bottom: 70px;
+}
+
+.figure7 {
+  position: absolute;
+
+  z-index: -1;
+ bottom: 0;
+ left: 0;
+ transform: translateY(50%);
+}
+.footer {
+  background: #10131B;
+}
+.figure8 {
+  position: absolute;
+
+  z-index: -1;
+  right: 0;
+  bottom: 100px;
+}
+
+.productcard {
+  height: 100%;
+}
