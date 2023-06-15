@@ -388,7 +388,12 @@ background: #687494;
   .breadcrumbs__items ul a span:hover {
     color: rgba(104, 116, 148, 1)
   }
-
+.container .container {
+  padding: 0;
+}
+.text-42 {
+  font-size: 42px;
+}
 
 @media (max-width: 1023px) {
   .mobile-full {
@@ -433,3 +438,8 @@ background: #687494;
 }
 }
 
+@media(max-width: 480px) {
+  .sm-text-23 {
+    font-size: 22px;
+  }
+}
