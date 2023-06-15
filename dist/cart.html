@@ -80,6 +80,12 @@
         <div class="headermain flex">
           <div class="headermain__left">
             <div class="headermain__logo"><a href="#" class='logo'><img src="img/logo.svg" alt=""></a></div>
+            <div class="headermain__btn onlyMobile">
+              <a href="#" class="menubutton" id='menuToggle'>
+                <span></span>
+                <span></span>
+              </a><!-- /.menubtn -->
+            </div><!-- /.headermain__btn -->
           </div>
           <!-- /.headermain__left-->
         
@@ -92,7 +98,7 @@
                 </div>
               </form>
             </div><!-- /.headermain__search -->
-            <div class="headermain__contacts">
+            <div class="headermain__contacts onlyDesktop">
               <div class='contacts'>
                 <div class="contacts__phone">
                   <div class="phone">
@@ -112,7 +118,7 @@
               </div>
             </div>
             <!-- /.headermain__contacts -->
-            <div class="headermain__callback">
+            <div class="headermain__callback onlyDesktop">
               <a href="#" class='btn_main'>Стать партнером</a>
             </div><!-- /.headermain__callback -->
             
@@ -182,63 +188,38 @@
   </div>
 
   <div class="mobilemenu onlyMobile" data-toggle="mainmenu">
-    <div class="mobilemenu__header">
-      <div class="mobilemenu__logo">
-        <a href="#" class='logo'><img src="img/logo.svg" alt=""></a>
-      </div><!-- /.mobilemenu__logo -->
-      <div class="mobilemenu__button">
-        <a href='#' class='mainmenubtn' data-toggleclick='mainmenu'>
-          <img src="img/menuclose.svg" alt="">
-        </a>
-      </div><!-- /.mobilemenu__button -->
-      <div class="mobilemenu__search">
-
-      </div>
-      <!-- /.headermain__menu -->
-      <div class="headermain__search cols_mainblock">
-        <form action="">
-          <div class="searchinput">
-            <button type="submit"><img src="img/Search.svg" alt="" class='onlyDesktop'><img src="img/Search2.svg" alt=""
-                class='onlyMobile'></button>
-            <input type="text" placeholder='Поиск' id='title-search-input_fixed'>
-          </div>
-        </form>
-      </div>
-    </div>
-    
+   
     <div class="mobilemenu__links">
       <ul>
-        <li><a href="">Доставка и оплата</a></li>
-        <li><a href="">Оптовым покупателям</a></li>
-        <li><a href="">Программа лояльности</a></li>
-        <li><a href="">Блог</a></li>
-        <li><a href="">Контакты и адреса магазинов</a></li>
-        <li><a href="">О нас</a></li>
+        <li><a href="">Продукты</a></li>
+        <li><a href="">Услуги</a></li>
+        <li><a href="">Поддержка</a></li>
+        <li><a href="">Партнеры</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">О компании</a></li>
+        <li><a href="">Контакты</a></li>
+       
       </ul>
     </div><!-- /.mobilemenu__links -->
-    <div class="mobilemenu__login">
-      <div class="mobilelogin">
-        <div class="mobilelogin__title">Войти в личный кабинет</div><!-- /.mobilelogin__title -->
-        <div class="mobilelogin__text">Чтобы делать покупки, отслеживать заказы и списывать до 20% бонусами с каждой
-          покупки</div><!-- /.mobilelogin__text -->
-        <div class="mobilelogin__button"><a href="" class="btn_main btn_main_small">Войти</a><!-- /.btn_main --></div>
-        <!-- /.mobilelogin__button -->
-      </div><!-- /.mobilelogin -->
-    </div><!-- /.mobilemenu__login -->
+  
     <div class="mobilemenu__contancts">
       <div class="mobilecontacts">
-        <div class="mobilecontacts__socials">
-          <div class="socials">
-            <div class="socials__items">
-              <a href="" target="_blank" class="socials__item"><img src="img/vkmobile.svg"
-                  alt=""></a><!-- /.socials__item -->
-              <a href="" target="_blank" class="socials__item"><img src="img/tgmobile.svg"
-                  alt=""></a><!-- /.socials__item -->
-            </div><!-- /.socials__items -->
-          </div>
-        </div><!-- /.mobilecontacts__socials -->
-        <div class="mobilecontacts__phone"><a href="tel:+7 495 445 25 55">+7 495 445 25 55</a></div>
-        <!-- /.mobilecontacts__phone -->
+        <div class="phone">
+          <a href="tel:+7 495 374 81 77" class="phonesk">
+            <span class="phoneimg">
+              <img src="img/phonesk.svg" alt="">
+            </span>
+            <span class='phonecontent'>
+              <span class='phonenumber'>7 495 374 81 77</span>
+              <span class='phonetext'>Многоканальный</span>
+            </span>
+          </a>
+        </div><!-- /.phone -->
+      
+      
+      <div class="mobilecontacts__callback ">
+        <a href="#" class='btn_main'>Стать партнером</a>
+      </div><!-- /.headermain__callback -->
       </div><!-- /.mobilecontacts -->
     </div><!-- /.mobilemenu__contancts -->
   </div><!-- /.mobilemenu -->
@@ -1042,7 +1023,7 @@
                 <div class="contacts__info">
                  <a href="mailto:info@skserver.ru">info@skserver.ru</a>
                 </div><!-- /.contacts__info -->
-                <div class="contacts__info">
+                <div class="contacts__info onlyDesktop">
                 <div class="copy">© skserver.ru - серверы и сетевое оборудование.2009-2023</div><!-- /.copy -->
                 </div><!-- /.contacts__info -->
                
@@ -1059,11 +1040,25 @@
               <li><a href="">Продукты</a></li>
               <li><a href="">Услуги</a></li>
               <li><a href="">Поддержка</a></li>
+          
+           
+
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul>
+         
               <li><a href="">Партнеры</a></li>
               <li><a href="">Новости</a></li>
               <li><a href="">О компании</a></li>
-              <li><a href="">Политика конфиденциальности</a></li>
-              <li><a href="">Пользовательское соглашение</a></li>
+
+            </ul>
+          </div>
+          <div class="footer__menu">
+          
+     
+              <li><a href="">Политика&nbsp;конфиденциальности</a></li>
+              <li><a href="">Пользовательское&nbsp;соглашение</a></li>
               <li><a href="">Карта сайта</a></li>
               
 
@@ -1072,6 +1067,9 @@
         </div><!-- /.footer__catalog -->
 
       </div><!-- /.footer__items -->
+      <div class="contacts__info onlyMobile">
+        <div class="copy">© skserver.ru - серверы и сетевое оборудование.2009-2023</div><!-- /.copy -->
+        </div><!-- /.contacts__info -->
     </div><!-- /.container -->
   </div><!-- /.footer__main -->
   

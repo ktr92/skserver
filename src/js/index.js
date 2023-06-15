@@ -79,7 +79,7 @@ $(document).ready(function () {
       .slideToggle()
   })
 
-  $(".menubutton").on("click", function (e) {
+  $("#menuToggle").on("click", function (e) {
     $(this).toggleClass("active")
     $(".mobilemenu").toggleClass("active")
     $(".jsbackdrop").toggleClass("active")
@@ -89,7 +89,7 @@ $(document).ready(function () {
   $(".jsbackdrop").on("click", function (e) {
     $(this).removeClass("active")
     $(".mobilemenu").removeClass("active")
-    $(".menubutton").removeClass("active")
+    $("#menuToggle").removeClass("active")
     $(".mobilemenu__level2").removeClass("active")
     $(".mobilemenu__content").removeClass("active")
   })

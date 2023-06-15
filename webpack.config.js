@@ -29,7 +29,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  entry: ["./src/js/index.js", "./src/scss/style.scss"],
+  entry: ["./src/js/index.js", "./src/scss/responsive.scss"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "./js/bundle.js",

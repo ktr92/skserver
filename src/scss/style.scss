@@ -1146,10 +1146,11 @@ margin-top: 20px;
   margin-left: 100px;
     max-width: 721px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .footer__menu {
   ul {
-    column-count: 3;
     @include clear;
   }
   li {
@@ -1167,4 +1168,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 
   }
+}
+.seoblock__cols {
+  align-items: center;
 }
