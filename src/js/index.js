@@ -224,7 +224,7 @@ function hideText() {
       $(this).on("click", function (e) {
         e.preventDefault()
         $(this).hide()
-        $(this).closest('[data-wrapper]').find('[data-hidden]').toggleClass('active')
+        $(this).closest('[data-wrapper]').siblings('[data-hidden]').toggleClass('active')
       })
     /* } */
   })

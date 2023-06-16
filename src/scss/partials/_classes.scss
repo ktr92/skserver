@@ -76,6 +76,17 @@ margin-bottom: 100px;
   font-family: "FontAwesome";
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
+.text-42 {
+  font-size: 42px;
+}
+.flex-1 {
+  flex: 1;
+}
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-style: normal;
@@ -121,7 +132,7 @@ margin-bottom: 100px;
   font-weight: 700;
   font-size: 16px;
 
-  
+  border:none;
   
   color: #FFFFFF;
 
@@ -417,9 +428,136 @@ background: #687494;
 .container .container {
   padding: 0;
 }
-.text-42 {
-  font-size: 42px;
+
+
+
+.formblock__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px; }
+
+
+.formblock__input {
+  padding: 0 20px 37px 20px; 
+width: 100%;
 }
+
+
+.formblock__input_col3 {
+  width: 33.3%; }
+
+.formblock__input_col2 {
+  width: 50%; }
+
+  .formblock__input {
+    position: relative;
+  }
+  .formblock {
+    input,textarea {
+      background: #10131B;
+      border: none;
+      border-radius: 0;
+      border-bottom: 3px solid rgba(38, 43, 54, 1);
+      padding: 10px 0 26px 0;
+      display: block;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 130%;
+      color: #FFFFFF;
+      width: 100%;
+      resize: none;
+      &.input-error {
+        border-color: #FF0D38;
+        color: #FF0D38;
+      }
+
+      &:focus {
+        border-color: $blue;
+      }
+
+    
+    }
+
+ 
+  }
+
+  .formblock__label {
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+
+color: #687494;
+  }
+
+.input-errortext {
+
+  position: absolute;
+ /*  margin-top: 15px; */
+  display: block;
+  bottom: 10px;
+  left: 20px;
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 100%;
+
+
+color: #FF0D38; }
+
+.input-inform {
+  color: rgba(83, 90, 103, 0.4); }
+
+
+
+
+  .check label {
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin-bottom: 0;
+    color: #FFFFFF;
+    padding-left: 29px;
+    position: relative; }
+  
+  .check input[type='checkbox'] {
+    display: none; }
+  
+  .check label a {
+    color: #FFFFFF;
+    text-decoration: underline; }
+  
+  .check label a:hover {
+    text-decoration: none; }
+  
+  .check label:before {
+    background-color: $blue;
+    border-radius: 3px;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    width: 15px;
+    top: 3px; }
+  
+  .check input[type='checkbox']:checked + label:before {
+    background-image: url(../img/checkbox_checked.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+  
+
+    .btn_large {
+      font-size: 18px;line-height: 23px;
+      text-transform: uppercase;
+      display: block;width: 100%;padding: 22px;height: unset;
+    }
 
 @media (max-width: 1023px) {
   .mobile-full {
@@ -462,6 +600,39 @@ background: #687494;
   font-size: 12px;
   line-height: 100%;
 }
+
+.formblock__input_col2 {
+  width: 100%;
+}
+.formblock__label {
+  font-size: 12px;
+}
+.formblock input, .formblock textarea {
+  height: unset;
+  padding-bottom: 21px;
+}
+.formblock__input {
+  padding-bottom: 22px;
+}
+.input-errortext {
+  bottom: 4px;
+}
+
+.btn_large {
+  font-size: 14px;
+line-height: 18px;
+padding: 17px;
+}
+.check label {
+  font-size: 12px;
+line-height: 15px;
+min-height: 15px;
+padding-left: 24px;
+}
+.check label:before {
+  top: 0;
+}
+
 }
 
 @media(max-width: 480px) {

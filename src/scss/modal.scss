@@ -184,7 +184,7 @@ label {
   margin-bottom: 7px;
   color: #3b435a;
 }
-
+/* 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -205,15 +205,14 @@ input[type="password"] {
   font-size: 16px;
   line-height: 19px;
   border: 2px solid #f3f3f7;
-  /* identical to box height */
 
   color: #3b435a;
 
   &.input-error {
     border-color: #ff585f;
   }
-}
-
+} */
+/* 
 textarea {
   display: block;
   width: 100%;
@@ -230,7 +229,6 @@ textarea {
   font-size: 16px;
   line-height: 19px;
   border: 2px solid #f3f3f7;
-  /* identical to box height */
 
   color: #3b435a;
 
@@ -243,7 +241,7 @@ textarea {
   }
 }
 
-
+ */
 .modal-body {
   padding: 0;
   overflow: visible;
