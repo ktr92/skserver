@@ -453,7 +453,7 @@ width: 100%;
     position: relative;
   }
   .formblock {
-    input,textarea {
+    input[type="text"],input[type="tel"],input[type="email"],textarea {
       background: #10131B;
       border: none;
       border-radius: 0;

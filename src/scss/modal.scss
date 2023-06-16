@@ -1,5 +1,6 @@
 @import "./partials/params.scss";
 @import "./partials/mixins.scss";
+@import "./partials/_classes.scss";
 
 .modal {
   text-align: center;
@@ -25,11 +26,11 @@
 }
 
 .modal-dialog {
-  width: 500px;
+  width: 631px;
   max-width: 100%;
 }
-.modal_type2 .modal-dialog {
-  width: 620px;
+.modal_large .modal-dialog {
+  width: 945px;
   max-width: 100%;
 }
 
@@ -39,12 +40,13 @@
 }
 
 .modal-backdrop {
-  background: rgba(37, 52, 79, 1);
+  background: #10131B;
+}
+.modal-backdrop.in {
+  opacity: 0.6;
+  z-index: 999999;
 }
 
-.modal-backdrop.in {
-  opacity: 0.3;
-}
 
 .modal-content {
   box-shadow: none;
@@ -91,11 +93,14 @@ button.close {
   
 }
 .modal-content {
-  border: none;
+  border: 1px solid rgba(40, 50, 63, 1);
   box-shadow: none;
-  background: #FFFFFF;
-  border-radius: 15px;
-  padding: 24px 30px;
+  background: linear-gradient(0deg, #191D28, #191D28), linear-gradient(0deg, #191D28, #191D28), #D9D9D9;
+  border-radius: 12px;
+
+    padding: 58px 70px;
+
+
 }
 
 .modal-body {
@@ -261,7 +266,7 @@ button.close {
   font-size: 10px;
   top: 21px;
   right: 21px;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 button.close:hover {
@@ -308,83 +313,103 @@ button.close:hover {
   }
 }
 
+.modalcontent {
+  margin: 12px 0 41px 0;
+}
+.modaltitle {
+  font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 130%;
+/* identical to box height, or 34px */
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.modaltitle_left {
+  text-align: left;
+  margin-bottom: 39px;
+}
+.modalbuttons {
+  margin: 40px 0;
+}
+.modalbuttons_one {
+  max-width: 385px;
+  margin-left: auto;margin-right: auto;
+}
+.modalicon {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  margin-left: auto;margin-right: auto;
+}
+
+.modal {
+  input, textarea {
+    background: transparent !important;
+  }
+}
+
+
+.fileupload {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 3px solid #262b36;
+  border-radius: 0;
+
+  padding: 10px 0 19px;
+  width: 100%;
+
+
+}
+  .fileupload label.filelabel {
+    cursor: pointer;
+    display: flex;
+  align-items: center;
+ }
+  .fileupload span {
+    padding-left: 7px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    
+    
+    color: #1D88DD;
+    display: flex;
+    align-items: center;
+ }
+
+
+ 
+
 @include medium-screen {
-  .pickuplist__addr {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  .fileupload span {
+    font-size: 14px;
+line-height: 130%;
+padding-left: 3px;
   }
-
-  .dtime__item {
-    font-size: 10px;
-    padding: 4px 9px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-
-    b {
-      display: block;
-    }
+  .formblock__input_submit {
+    margin-top: 35px;
   }
-
-  .pickuplist__addr {
-    margin-bottom: 0;
+  .modaltitle_left {
+    margin-right: 20px;
   }
-
-  .pickuptabs__search {
-    margin-bottom: 21px;
+  .modal-open .modal {
+    padding: 0 !important;
   }
-
-  .pickuplist__item {
-    padding-bottom: 11px;
-    margin-bottom: 13px;
-  }
-
-  .pickuplist__address {
-    margin-right: 12px;
-    display: flex;
-    align-items: center;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    img {
-      width: 11px;
-    }
-
-    span {
-      padding-left: 4px;
-      font-size: 12px;
-      line-height: 100%;
-    }
-  }
-
-  .input-errortext {
-    line-height: 1;
-    font-size: 11px;
-  }
-
-  .pickuplist__header {
-    font-size: 12px;
-    line-height: 100%;
-    margin-bottom: 10px;
-  }
-
-  .modal-content {
-    padding: 24px 16px 21px 16px;
-  }
-
   .modal-dialog {
     margin: 18px auto;
     width: calc(100% - 36px) !important;
   }
 
   button.close {
-    width: 15px;
-    height: 15px;
-    opacity: 0.7 !important;
-    right: 17px;
-    top: 17px;
+    width: 12px;
+    height: 12px;
+     right: 10px;
+    top: 10px;
   }
 
   .modal-title, .modal_type2 .modal-title {
@@ -392,43 +417,31 @@ button.close:hover {
     font-size: 18px;
     line-height: 100%;
   }
+  .modal-content {
+    padding: 28px 16px;
+  }
   
-
-  .deliverytabs__header li {
-    height: 32px;
-    line-height: 32px;
-    font-size: 14px;
-  }
-
-  .deliverytabs__header {
-    margin-bottom: 16px;
-  }
-
-  .deliverytabs__inputcol {
-    width: 50%;
-  }
-
-  input {
-    height: 36px;
-    padding: 0 10px;
-  }
-
-  label {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 4px;
-  }
-
-  .deliverytabs__inputcol {
-    padding: 0 3px;
-    margin-bottom: 9px;
-  }
-
-  .deliverytabs__inputrow {
-    margin-bottom: 10px;
-  }
-
-  .deliverytabs__map {
-    margin-bottom: 19px;
-  }
+.modalcontent {
+  margin: 13px 0 22px 0;
 }
+.modaltitle {
+  font-size: 18px;
+  line-height: 130%
+}
+.modalbuttons {
+  margin: 22px 0;
+}
+.modalbuttons_one {
+  max-width: 385px;
+  width: 100%;
+  margin-left: auto;margin-right: auto;
+}
+.modalicon {
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 14px;
+  margin-left: auto;margin-right: auto;
+}
+
+}
+

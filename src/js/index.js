@@ -2,6 +2,7 @@
 function initFE() {
   fixElement(300, false, 'headermain', 'scroll')
   hideText()
+  fileUpload()
   /*   cardImagesSlider() */
   /*   menuInit() */
 /*   mainSliderInit()
@@ -29,6 +30,16 @@ function initFE() {
   moreNewsSliderInit() */
 }
 
+function fileUpload() {
+	const actualBtn = document.getElementById('actual-btn');
+
+	const fileChosen = document.getElementById('file-chosen');
+
+	actualBtn.addEventListener('change', function () {
+		fileChosen.textContent = this.files[0].name
+	})
+}
+
 function dropdownInit() {
   $("[data-dropdownclick]").on("click", function (e) {
     $(this).toggleClass("active")
@@ -44,6 +55,8 @@ function dropdownInit() {
     // $(`[data-toggleactive=${dropdown}]`).toggleClass("active")
   })
 }
+
+
 
 $(document).ready(function () {
   
