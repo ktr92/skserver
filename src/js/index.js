@@ -1,6 +1,7 @@
 
 function initFE() {
   fixElement(300, false, 'headermain', 'scroll')
+  hideText()
   /*   cardImagesSlider() */
   /*   menuInit() */
 /*   mainSliderInit()
@@ -11,8 +12,8 @@ function initFE() {
   dropdownInit()
   menuInit()
   quantityForm()
-   detailsliderInit()
-   hideText() */
+   detailsliderInit()*/
+  
   /*  imgSliderInit()
   recipeSliderInit() */
   /*  mobileAccordeon() */
@@ -217,14 +218,15 @@ $(document).ready(function () {
 })
 
 function hideText() {
-  $('.detailparam__text').each(function() {
-    if ($(this) && $(this).height() > 20) {
-      $(this).addClass('detailparam__text_large')
+  $('[data-btnhidden]').each(function() {
+    /* if ($(this) && $(this).height() > 20) { */
+     /*  $(this).addClass('detailparam__text_large') */
       $(this).on("click", function (e) {
         e.preventDefault()
-        $(this).toggleClass("active")
+        $(this).hide()
+        $(this).closest('[data-wrapper]').find('[data-hidden]').toggleClass('active')
       })
-    }
+    /* } */
   })
   
   

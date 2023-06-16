@@ -955,7 +955,8 @@ ul {
     line-height: 160%;
     /* or 26px */
     margin-bottom: 18px;
-    
+    display: flex;
+    align-items: center;
     color: #FFFFFF;
     padding-left: 73px;
     background-image: url(../img/fitches_check.svg);
@@ -1489,3 +1490,26 @@ color: #FFFFFF;
   transform: translateY(50%);
 }
 
+.pageheaderblock__img img {
+  max-width: initial;
+  position: absolute;
+  right: 0;
+  /* top: 0; */
+  max-height: initial;
+  bottom: -65px;
+  transform: translateY(50%);
+  z-index: 1;
+}
+
+.pageheaderblock__image {
+  position: relative;
+}
+.showtext {
+  margin-top: 40px;
+}
+[data-hidden] {
+  display: none;
+}
+[data-hidden].active {
+  display: block;
+}

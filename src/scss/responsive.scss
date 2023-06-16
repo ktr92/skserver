@@ -644,6 +644,12 @@ font-weight: 300;
   .pageheaderblock__content {
     padding-right: 0;
   }
+  .pageheaderblock__img img {
+    position: relative;
+    bottom: unset;
+    max-width: 100%;
+    transform: none;
+  }
   .pageheaderblock__image {
     max-width: 100%;
     min-width: 100%;
@@ -692,5 +698,11 @@ padding: 16px;
 margin: 18px 0;
 color: #FFFFFF;
 width: 284px;
+}
+
+.showtext {
+  a {
+    width: 100%;
+  }
 }
 }
