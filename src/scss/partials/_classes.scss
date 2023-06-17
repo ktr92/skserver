@@ -559,7 +559,60 @@ color: #FF0D38; }
       display: block;width: 100%;padding: 22px;height: unset;
     }
 
+.btn_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  border: 1.5px solid #28323F;
+border-radius: 6px;
+padding: 22px 39px;
+img {
+  margin-left: 11px;
+  display: inline-block;
+}
+
+&:hover {
+  background: $blue;
+}
+}
+
+.slick-dots li {
+  height: 6px;
+  margin: 3px;
+  width: 6px;
+}
+
+.slick-dots li button {
+  background-color: #232938;
+  border-radius: 50%;
+  height: 6px;
+  padding: 0;
+  width: 6px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: $blue;
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
 @media (max-width: 1023px) {
+  .btn_border  {
+    font-size: 14px;
+  }
+  .btn_border img {
+    height: 14px;
+  }
   .mobile-full {
     width: 100% !important;
   }

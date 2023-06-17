@@ -3,6 +3,7 @@ function initFE() {
   fixElement(300, false, 'headermain', 'scroll')
   hideText()
   fileUpload()
+  detailSliderInit()
   /*   cardImagesSlider() */
   /*   menuInit() */
 /*   mainSliderInit()
@@ -31,13 +32,16 @@ function initFE() {
 }
 
 function fileUpload() {
-	const actualBtn = document.getElementById('actual-btn');
+  if (document.getElementById('actual-btn')) {
+    const actualBtn = document.getElementById('actual-btn');
 
 	const fileChosen = document.getElementById('file-chosen');
 
 	actualBtn.addEventListener('change', function () {
 		fileChosen.textContent = this.files[0].name
 	})
+  }
+	
 }
 
 function dropdownInit() {
@@ -245,15 +249,16 @@ function hideText() {
   
 }
 
-function mainSliderInit() {
-  $(".mainslider__slider").slick({
+function detailSliderInit() {
+  $("[data-slider='detail']").slick({
     dots: true,
     arrows: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-     autoplay: true,
-    autoplaySpeed: 3000,
+    fade: true,
+  /*    autoplay: true,
+    autoplaySpeed: 3000, */
   })
 }
 function videoSliderInit() {
