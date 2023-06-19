@@ -54,6 +54,9 @@ a {
 .mb-100 {
 margin-bottom: 100px;
 }
+.mb-50 {
+  margin-bottom: 50px !important;
+}
 .nowrap {
   white-space: nowrap;
 }
@@ -621,6 +624,7 @@ img {
 }
 
 @media (max-width: 1023px) {
+  
   .btn_border  {
     font-size: 14px;
   }
@@ -705,5 +709,11 @@ padding-left: 24px;
 @media(max-width: 480px) {
   .sm-text-23 {
     font-size: 22px;
+  }
+  .xs-mb-20 {
+    margin-bottom: 20px !important;
+  }
+  .xs-pt-40 {
+    padding-top: 40px !important;
   }
 }

@@ -990,9 +990,34 @@ line-height: 100%;
   .contactsitemstable__table {
     margin-bottom: 35px;
   }
+  .newslist__item {
+    width: 50%;
+  }
 }
 
 @media (max-width: 480px) {
+  .newslist__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .newslist {
+    margin: 0;
+  }
+  .newscard__image {
+    margin-bottom: 19px;
+  }
+  .newscard__title {
+    margin-bottom: 13px;
+    a {
+      font-size: 14px;
+line-height: 100%;
+    }
+  }
+  .newscard__info {
+    font-size: 12px;
+line-height: 130%;
+  }
+
   .pageheaderblock__wrapper {
     flex-wrap: wrap;
   }
