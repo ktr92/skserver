@@ -67,6 +67,22 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  ;(function ($) {
+    $(function () {
+      $("[data-headertabs]").on("click", "li:not(.active)", function () {
+        $(this)
+          .addClass("active")
+          .siblings()
+          .removeClass("active")
+          .closest("[data-tabs]")
+          .find("[data-contenttabs]")
+          .removeClass("active")
+          .eq($(this).index())
+          .addClass("active")
+      })
+    })
+  })(jQuery)
+
   $(".limitheight__button").on("click", function (e) {
     e.preventDefault()
     $(this).hide()
@@ -200,21 +216,7 @@ $(document).ready(function () {
       })
     })
   })(jQuery)
-  ;(function ($) {
-    $(function () {
-      $("[data-headertabs]").on("click", "li:not(.active)", function () {
-        $(this)
-          .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("[data-tabs]")
-          .find("[data-contenttabs]")
-          .removeClass("active")
-          .eq($(this).index())
-          .addClass("active")
-      })
-    })
-  })(jQuery)
+  
   ;(function ($) {
     $(function () {
       $(".sitetabs__header ul").on("click", "li:not(.active)", function () {

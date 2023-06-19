@@ -606,6 +606,20 @@ img {
   display: none;
 }
 
+[data-headertabs] {
+  li {
+    cursor: pointer;
+  }
+}
+
+[data-contenttabs] {
+  display: none;
+}
+
+[data-contenttabs].active {
+  display: block;
+}
+
 @media (max-width: 1023px) {
   .btn_border  {
     font-size: 14px;
