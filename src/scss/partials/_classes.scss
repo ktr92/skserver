@@ -622,6 +622,9 @@ img {
 [data-contenttabs].active {
   display: block;
 }
+.mb-130 {
+  margin-bottom: 130px !important;
+}
 
 @media (max-width: 1023px) {
   
@@ -704,6 +707,9 @@ padding-left: 24px;
   top: 0;
 }
 
+.xs-mb-30 {
+  margin-bottom: 30px !important
+}
 }
 
 @media(max-width: 480px) {

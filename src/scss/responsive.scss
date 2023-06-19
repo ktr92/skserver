@@ -993,6 +993,100 @@ line-height: 100%;
   .newslist__item {
     width: 50%;
   }
+
+  
+.errorpage {
+  padding-bottom: 35px;
+  .wavebgblock {
+    padding-top: 40px;
+  }
+}
+.errorpage__header {
+  font-size: 125px;
+  margin-bottom: 10px;
+}
+.waveblock {
+}
+.errorpage__title {
+  margin-bottom: 16px;
+  h1 {
+    font-size: 26px;
+    line-height: 100%;
+  }
+
+}
+.errorpage__text {
+  margin-bottom: 24px;
+}
+.text {
+}
+.errorpage__button {
+  max-width: 284px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.btn_main {
+}
+.mapblock {
+  margin-top: 0;
+  iframe {
+    height: 312px;
+  }
+}
+.mapblock__content {
+  margin-top: -15px;
+  position: relative;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 21px 16px;
+  .phoneimg {
+    height: 32px;
+    max-width: 32px;
+    min-width: 32px;
+ 
+  }
+  .phonesk .phoneimg img {
+    height: 16px;
+    max-width: 16px;
+    min-width: 16px;
+  }
+}
+.phonenumber {
+  font-size: 12px;
+  white-space: unset;
+}
+.mapblock__item .phonenumber {
+  font-size: 12px;
+  white-space: unset;
+}
+.mapblock__title {
+  margin-bottom: 17px;
+}
+.mapblock__map {
+  border-radius: 0;
+  margin: 0 -15px;
+}
+.wavebgblock.wavebgblock_desktop {
+  padding-top: 0;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 6px;
+  border-radius: 50%;
+border: 1.5px solid #28323F;
+}
+.socials__title {
+  font-size: 12px;
+
+}
 }
 
 @media (max-width: 480px) {

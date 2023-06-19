@@ -1,347 +1,105 @@
 <% var data={ title: "MAIN" , author: "" }; %>
-<%= _.template(require('../includes/head.html').default)(data) %>
-<%= _.template(require('../includes/header.html').default)(data) %>
-<main>
-  <div class="breadcrumbs">
-    <div class="container">
-      <div class="breadcrumbs__items">
-        <ul>
-          <li><a href="/"><span>Главная страница</span></a></li>
-          <li><span>Персональный раздел</span></li>
-        </ul>
-      </div>
-      <!-- /.breadcrumbs__items -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.breadcrumbs -->
-  <div class="contactspage">
-    <div class="container">
-      <div class="contactspage__cols">
-        <div class="contactspage__col contactspage__col_aside">
-          <div class="contactspage__content">
-            <div class="contactspage__title">
-              <h1>Контакты</h1>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="innerpage">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li><a href="/"><span>SK Server</span></a></li>
+                  <li><a href=""><span>Продукты</span></a></li>
+                  <li><span>Серверы</span></li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
             </div>
-            <!-- /.contactspage__title -->
-            <div class="contactspage__items">
-              <div class="contactspage__item">
-                <div class="contactspage__phone">
-                  <a href="tel:+7 495 445-25-55" class='phoneicon'>+7 495 445-25-55</a>
-                </div>
-                <!-- /.contactspage__phone -->
-              </div>
-              <!-- /.contactspage__item -->
-              <div class="contactspage__item">
-                <div class="contactspage__email">
-                  <a href="mailto:INFO@MARIDEL.RU" class='emailicon'>INFO@MARIDEL.RU</a>
-                </div>
-                <!-- /.contactspage__phone -->
-              </div>
-              <!-- /.contactspage__item -->
-              <div class="contactspage__item">
-                <div class="contactspage__rek">
-                  <div class="rekv">
-                    <div class="rekv__title">Реквизиты:</div>
-                    <!-- /.rekv__title -->
-                    <div class="rekv__items">
-                      <div class="rekv__item">
-                        <p>ООО «Камчатские морепродукты»</p>
-                        <p>ИНН: 7743354242</p>
-                        <p>КПП: 774301001</p>
-                        <p>ОГРН: 1217700054692</p>
-                        <p>Расчетный счет: 40702810138000141508</p>
-                        <p>Кор. счет: 30101810400000000225</p>
-                        <p>БИК: 044525225</p>
-                        <p>Юридический адрес: 127238 г.Москва вн.тер.г.муниципальный округ Западное Дегунино Дмитровское шоссе дом 85 офис 404</p>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="contentpage">
+            <div class="container">
+              <div class="innerpage__header mb-130 xs-mb-30">
+                <h1>Контакты</h1>
+              </div><!-- /.innerpage__header -->
+            </div>
+            <!-- /.container -->
+            <div class="wavebgblock  wavebgblock_desktop">
+              <div class="container">
+                <div class="mapblock">
+                  <div class="mapblock__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab215bb9e2514f43bf0a588d03c4ccc6154ed454b4f84db938e83b85404e62d8d&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+                  </div><!-- /.mapblock__map -->
+            
+                <div class="mapblock__content">
+                  <div class="mapblock__title">СК Сервер</div>
+                  <div class="mapblock__items">
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="tel:+7 495 374 81 77" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/phonesk.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">7 495 374 81 77</span>
+                          </span>
+                        </a>
                       </div>
-                      <!-- /.rekv__item -->
-                    </div>
-                    <!-- /.rekv__items -->
-                  </div>
-                  <!-- /.rekv -->
-                </div>
-                <!-- /.contactspage__phone -->
-              </div>
-              <!-- /.contactspage__item -->
-            </div>
-            <!-- /.contactspage__items -->
-          </div>
-          <!-- /.contactspage__content -->
-        </div>
-        <!-- /.contactspage__col contactspage__col_aside -->
-        <div class="contactspage__col contactspage__col_main">
-          <div class="contactspage__tabs" data-tabs='contactspage'>
-            <div class="contactspage__header" data-headertabs='contactspage'>
-              <ul>
-                <li class='active'>На карте</li>
-                <li>Списком</li>
-              </ul>
-            </div>
-            <!-- /.contactspage__header -->
-          <div class="contactspage__tabcontent active" data-contenttabs='contactspage'>
-            <div class="contactspage__map">
-              <div class="pagemap">
-                <div class="pagemap__map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3e13a80bc604b0d037ac2315d68dd9df60529be9fdc57e78cb121355617fec1&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-                </div>
-                <!-- /.pagemap__map -->
-              </div>
-              <!-- /.pagemap -->
-             
-              <div class="pageblocksl">
-                <div class="bannerblock bannerblock_hasicon bannerblock_bg">
-                  <div class="container">
-                    <div class="bannerblock__wrapper">
-                      <div class="bannerblock__items">
-                        <div class="bannerblock__item bannerblock__item__icon">
-                          <div class="bannerblock__icon">
-                            <img src="img/attention.svg" alt="">
-                          </div><!-- /.bannerblock__icon -->
-                        </div><!-- /.bannerblock__item bannerblock__item__icon -->
-                        <div class="bannerblock__item bannerblock__item_main">
-                          <div class="bannerblock__title">График работы в праздничные дни:</div>
-                          <div class="bannerblock__text">8.03 выходной</div>
-                          <div class="bannerblock__text">с 9.03 работаем в обычном режиме</div>
-                        </div><!-- /.bannerblock__item -->
-                      
-                      </div><!-- /.bannerblock__items -->
-                    </div><!-- /.bannerblock__wrapper -->
-                  </div><!-- /.container -->
-                </div>
-               </div>
-            </div>
-            <!-- /.contactspage__map -->
-          </div>
-          <!-- /.contactspage__tabcontent -->
-          <div class="contactspage__tabcontent " data-contenttabs='contactspage'>
-            <div class="contactspage__table">
-              <div class="contactsitems__table">
-                <div class="contactsitems__filter">
-                  <form action="">
-                    <div class="contactsitems__select">
-                      <select name="METRO" id="metroSearch">
-                        <option value="">Выберите метро</option>
-                        <option value="2b061165a21795dd227cd91203cb86c6">м. Алексеевская</option>
-                        <option value="e3a80e44f5a9e5a67d9c7ca220685c94">м. Бабушкинская</option>
-                        <option value="12d5caf657eb193f63b8b485ff3f89a9">м. Бауманская</option>
-                        <option value="aea1faa0c9d439c2ba9670f3d7b60a74">м. Белорусская</option>
-                        <option value="b3306dc8d5abaaf14da10688b799f85f">м. Войковская</option>
-                        <option value="a17a7c3bc374036419b20ddd0421529d">м. Кантемировская</option>
-                        <option value="cdc6ad49d268ec2c31b73a78358a906a">м. Коломенская</option>
-                        <option value="1bdd89010efe5ee401bafbbec8138582">м. Красногвардейская</option>
-                        <option value="0c7a87729d78bdd0f7adec3292ac734b">м. Люблино</option>
-                        <option value="63171916cf53067ad4849435da5ce7c5">м. Планерная</option>
-                        <option value="df878d7306439a07bb930c93037e2928">м. Преображенская площадь</option>
-                        <option value="eac08ce7edfad9a94f623ce3023587de">м. Профсоюзная</option>
-                        <option value="c7251da023e86e9669bb1a112a8a3d9f">м. Савеловская</option>
-                        <option value="9e3d43351375feb1fd3120777cf6202b">м. Спортивная</option>
-                        <option value="e49d81bf16d496cce1b0bd294c56eb31">м. Сходненская</option>
-                        <option value="eeee91e1935cd62ecb1eeda8e818c5d9">м.Селигерская</option>
-                        <option value="1282c6f8f66d7f23ab9e8d7bc0020f70">м.Тёплый Стан</option>
-                      </select>
-                    </div>
-                    <div class="contactsitems__search">
-                      <div class="searchinput">
-                        <button type="submit"><img src="img/Search.svg" alt="" class="onlyDesktop"><img src="img/Search2.svg" alt="" class="onlyMobile"></button>
-                        <input type="text" placeholder="Быстрый поиск">
+                    </div><!-- /.mapblock__item -->
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="#" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/location_on.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">Москва, Ивана Франко, д. 46, стр. 4</span>
+                          </span>
+                        </a>
                       </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="contactsitemstable">
-                  <div class="contactsitemstable__table">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th><span>Город</span></th>
-                          <th><span>Адрес</span></th>
-                          <th><span>Метро</span></th>
-                          <th><span>Режим работы</span></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr data-address="ул. корнеева, д. 1а" data-metro="">
-                          <td><span>Домодедово</span></td>
-                          <td><span>ул. Корнеева, д. 1А</span></td>
-                          <td><span></span></td>
-                          <td><span>ПН-ПТ 09:00-21:00<br>СБ-ВС 09:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. новомытищинский проспект, д.76 а" data-metro="">
-                          <td><span>Мытищи</span></td>
-                          <td><span>ул. Новомытищинский проспект, д.76 А</span></td>
-                          <td><span></span></td>
-                          <td><span>ПН-ПТ 09:00-21:00<br>СБ-ВС 09:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. можайское шоссе, д.71 в" data-metro="">
-                          <td><span>Одинцово</span></td>
-                          <td><span>ул. Можайское шоссе, д.71 В</span></td>
-                          <td><span></span></td>
-                          <td><span>ПН-ПТ 09:00-21:00<br>СБ-ВС 09:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="дмитровское шоссе, д. 85" data-metro="eeee91e1935cd62ecb1eeda8e818c5d9">
-                          <td><span>Москва</span></td>
-                          <td><span>Дмитровское шоссе, д. 85</span></td>
-                          <td><span>м.Селигерская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. академика миллионщикова, д. 19" data-metro="cdc6ad49d268ec2c31b73a78358a906a">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Академика Миллионщикова, д. 19</span></td>
-                          <td><span>м. Коломенская</span></td>
-                          <td><span>ПН-ПТ 09:00-21:00<br>СБ-ВС 09:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. проспект новоясеневский, д.1 корп.1" data-metro="1282c6f8f66d7f23ab9e8d7bc0020f70">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. проспект Новоясеневский, д.1 корп.1</span></td>
-                          <td><span>м.Тёплый Стан</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. бутырская, д.4" data-metro="c7251da023e86e9669bb1a112a8a3d9f">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Бутырская, д.4</span></td>
-                          <td><span>м. Савеловская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. 1-я тверская-ямская, д.29, стр.1" data-metro="aea1faa0c9d439c2ba9670f3d7b60a74">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. 1-я Тверская-Ямская, д.29, стр.1</span></td>
-                          <td><span>м. Белорусская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. бауманская д. 32 стр. 2" data-metro="12d5caf657eb193f63b8b485ff3f89a9">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Бауманская д. 32 стр. 2</span></td>
-                          <td><span>м. Бауманская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. бауманская, д.35/1" data-metro="12d5caf657eb193f63b8b485ff3f89a9">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Бауманская, д.35/1</span></td>
-                          <td><span>м. Бауманская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. енисейская д.22 корп.2" data-metro="e3a80e44f5a9e5a67d9c7ca220685c94">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Енисейская д.22 корп.2</span></td>
-                          <td><span>м. Бабушкинская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. краснодарская д.57 корп.3" data-metro="0c7a87729d78bdd0f7adec3292ac734b">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Краснодарская д.57 корп.3</span></td>
-                          <td><span>м. Люблино</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. ленинградское шоссе, д.9, корп.1" data-metro="b3306dc8d5abaaf14da10688b799f85f">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Ленинградское шоссе, д.9, корп.1</span></td>
-                          <td><span>м. Войковская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. ореховый бульвар, д.45" data-metro="1bdd89010efe5ee401bafbbec8138582">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Ореховый бульвар, д.45</span></td>
-                          <td><span>м. Красногвардейская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. планерная д. 12к1" data-metro="63171916cf53067ad4849435da5ce7c5">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Планерная д. 12к1</span></td>
-                          <td><span>м. Планерная</span></td>
-                          <td><span>ПН-ПТ с 09:00-22:00<br>СБ-ВС с 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. пролетарский проспект, д.23" data-metro="a17a7c3bc374036419b20ddd0421529d">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Пролетарский проспект, д.23</span></td>
-                          <td><span>м. Кантемировская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 09:00-22:00</span></td>
-                        </tr>
-                        <tr data-address="ул. проспект мира, д.116" data-metro="2b061165a21795dd227cd91203cb86c6">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. проспект Мира, д.116</span></td>
-                          <td><span>м. Алексеевская</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. профсоюзная, д.15" data-metro="eac08ce7edfad9a94f623ce3023587de">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Профсоюзная, д.15</span></td>
-                          <td><span>м. Профсоюзная</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 09:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул. сходненская д. 37" data-metro="e49d81bf16d496cce1b0bd294c56eb31">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Сходненская д. 37</span></td>
-                          <td><span>м. Сходненская</span></td>
-                          <td><span>ПН-ПТ с 09:00-22:00<br>СБ-ВС с 09:00-22:00</span></td>
-                        </tr>
-                        <tr data-address="ул. усачева, д.29 корп.1" data-metro="9e3d43351375feb1fd3120777cf6202b">
-                          <td><span>Москва</span></td>
-                          <td><span>ул. Усачева, д.29 корп.1</span></td>
-                          <td><span>м. Спортивная</span></td>
-                          <td><span>ПН-ПТ 09:00-22:00<br>СБ-ВС 10:00-21:00</span></td>
-                        </tr>
-                        <tr data-address="ул.большая черкизовская д.3., корп.1" data-metro="df878d7306439a07bb930c93037e2928">
-                          <td><span>Москва</span></td>
-                          <td><span>ул.Большая Черкизовская д.3., корп.1</span></td>
-                          <td><span>м. Преображенская площадь</span></td>
-                          <td><span>ПН-ПТ 09:00-21:00<br>СБ-ВС 09:00-21:00</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.contactspage__map -->
+                    </div><!-- /.mapblock__item -->
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="mailto:info@skserver.ru" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/mail_FILL.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">info@skserver.ru</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div><!-- /.mapblock__item -->
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="#" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/schedule.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">с 9:00 до 18:00</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div><!-- /.mapblock__item -->
+                  </div><!-- /.mapblock__items -->
+                  <div class="mapblock__footer">
+                    <div class="mapblock__socials">
+                      <div class="socials">
+                        <div class="socials__title">Мы в соц. сетях:</div>
+                        <div class="socials__items">
+                          <a href="" class="socials__item"><img src="img/inst.svg" alt=""></a>
+                          <a href="" class="socials__item"><img src="img/vk.svg" alt=""></a>
+                          <a href="" class="socials__item"><img src="img/YouTube.svg" alt=""></a>
+                        </div><!-- /.socials__items -->
+                      </div><!-- /.socials -->
+                    </div><!-- /.mapblock__socials -->
+                  </div><!-- /.mapblock__footer -->
+                </div><!-- /.mapblock__content -->
+              </div><!-- /.mapblock -->
+              </div><!-- /.container -->
+            </div><!-- /.wavebgblock -->
           </div>
-          <!-- /.contactspage__tabcontent -->
         </div>
-        </div>
-        <!-- /.contactspage__col contactspage__col_main -->
-      </div>
-      <!-- /.contactspage__cols -->
-
-      <div class="pageblocksl subscribeblock">
-        <div class="container">
-          <div class="subscribeblock__wrapper">
-            <div class="subscribeblock__container">
-              <div class="subscribeblock__items">
-                <div class="subscribeblock__content">
-                  <div class="subscribeblock__title">
-                    <span class="mark">Подпишитесь</span> на нашу рассылку <br> и узнавайте о новинках, акциях <br> и
-                    скидках
-                    первыми
-                  </div><!-- /.subscribeblock__title -->
-                  <div class="subscribeblock__form">
-                    <form action="">
-                      <div class="subscribeblock__row">
-                        <div class="subscribeblock__input">
-                          <input type="email" placeholder="Ваш e-mail">
-                        </div><!-- /.subscribeblock__input -->
-                        <div class="subscribeblock__button">
-                          <button type="submit" class="btn_main">Подписаться</button>
-                        </div><!-- /.subscribeblock__button -->
-                      </div><!-- /.subscribeblock__row -->
-                      <div class="subscribeblock__confirm">
-                        Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
-                      </div><!-- /.subscribeblock__confirm -->
-                    </form>
-                  </div><!-- /.subscribeblock__form -->
-                </div><!-- /.subscribe__content -->
-                <div class="subscribeblock__image">
-                  <div class="subscribeblock__img">
-                    <img src="img/telefon.png" alt="">
-                  </div><!-- /.subscribeblock__img -->
-                </div><!-- /.subscribe__image -->
-              </div><!-- /.subscribe__items -->
-            </div><!-- /.subscribe__container -->
-          </div><!-- /.subscribe__wrapper -->
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.contactspage -->
-</main>
-<%= _.template(require('../includes/footer.html').default)(data) %>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

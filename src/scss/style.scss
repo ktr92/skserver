@@ -2301,3 +2301,152 @@ line-height: 120%;
     margin-top: 40px;
   }
 }
+
+.errorpage {
+  padding-bottom: 75px;
+}
+.errorpage__header {
+  font-style: normal;
+font-weight: 700;
+font-size: 235px;
+line-height: 100%;
+/* identical to box height, or 235px */
+
+text-align: center;
+text-transform: uppercase;
+
+background: linear-gradient(180deg, #33E7FF 0%, #1D88DD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+text-shadow: 12px 12px 134px rgba(0, 0, 0, 0.25);
+}
+.waveblock {
+}
+.errorpage__title {
+  margin-bottom: 24px;
+  h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 100%;
+    /* identical to box height, or 52px */
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #FFFFFF;
+  }
+
+}
+.errorpage__text {
+  text-align: center;
+  margin-bottom: 29px;
+}
+.text {
+}
+.errorpage__button {
+  max-width: 267px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.btn_main {
+}
+
+
+.mapblock {
+  margin-top: -160px;
+  border-radius: 12px;
+  position: relative;
+}
+.mapblock__map {
+}
+.mapblock__content {
+  background: #191D28;
+border-radius: 12px;
+padding: 42px 39px 35px 47px;
+position: absolute;
+right: 52px;
+top: -62px;
+z-index: 8;
+}
+.mapblock__title {
+  font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 100%;
+/* identical to box height, or 26px */
+margin-bottom: 34px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.mapblock__items {
+  padding-bottom: 20px;
+}
+.mapblock__item {
+  margin-bottom: 11px;
+
+  .phonenumber {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+text-transform: none;
+
+color: #FFFFFF;
+
+  }
+}
+
+.mapblock__footer {
+  border-top: 2px solid #262B36;
+  padding-top: 26px;
+}
+.mapblock__socials {
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socials__title {
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+
+color: #FFFFFF;
+}
+.socials__items {
+}
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 6px;
+  border-radius: 50%;
+border: 1.5px solid #28323F;
+
+&:hover {
+  border-color: $blue;
+}
+
+&:focus {
+  border-color: rgba(29, 136, 221, 1);
+}
+
+
+}
+.mapblock__map {
+  border-radius: 12px;
+  overflow: hidden;
+}
