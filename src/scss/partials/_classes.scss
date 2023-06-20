@@ -142,6 +142,12 @@ margin-bottom: 100px;
   background: #1D88DD;
   border-radius: 6px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+
+
+
   &:hover {
     background-color: #3EA9FF;
     color: #fff;
@@ -158,6 +164,7 @@ margin-bottom: 100px;
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
 .btn_dark {
   text-align: center;
   height: 52px;
@@ -628,6 +635,41 @@ img {
 
 .m-0 {
   margin: 0 !important;
+}
+
+
+.btn_texticon, .btn_main {
+  &:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 60px;
+    background: #fff;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0.4;
+  }
 }
 
 @media (max-width: 1023px) {

@@ -821,6 +821,10 @@ font-size: 14px;
   }
   .fitchesblock__wrapper {
     display: flex;
+
+  }
+  .fitchesblock__items_type1 .fitchesblock__wrapper{
+    flex-direction: column;
   }
   .fitchesblock__main {
     margin-left: 12px;
@@ -1117,6 +1121,15 @@ border: 1.5px solid #28323F;
 .blockicon__title {
   font-size: 14px;
 line-height: 100%;
+}
+.contentblock {
+  margin-top: 0px;
+}
+.pagevideo__img:after {
+  width: 58px;
+  height: 58px;
+  display: block;
+  content: url(../img/play2.svg);
 }
 }
 

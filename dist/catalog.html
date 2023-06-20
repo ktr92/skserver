@@ -37,14 +37,8 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/jquery.dmenu.css">
-
-  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/slick.min.css">
   <link rel="stylesheet" href="css/slick-theme.min.css">
-  <!--   <link rel="stylesheet" href="css/lightbox.min.css"> -->
-  <!--   <link rel="stylesheet" href="css/flatpickr.min.css"> -->
   <link rel="stylesheet" href="css/style.bundle.css" />
 
 
@@ -52,21 +46,9 @@
   <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/maskedinput.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-  <!--   <script src="js/hover-slider.min.js"></script> -->
   <script src="js/slick.min.js"></script>
-  <script src="js/jquery.dmenu.js"></script>
-  <script src="js/fixedcart.js"></script>
 
-  <!--   <script src="js/selectbox.js"></script> -->
-  <!--   <script src="js/jquery-ui.js"></script> -->
-  <!--   <script src="js/filter.js"></script> -->
-    <script src="js/jquery.zoom.min.js"></script>
-  <!--   <script src="js/lightbox.min.js"></script> -->
-  <!--   <script src="js/jquery.lazy.min.js"></script>
-  <script src="js/jquery.lazy.youtube.min.js"></script> -->
-  <!--   <script src="js/fixedcart.js"></script> -->
-  <!--   <script src="js/flatpickr.js"></script> -->
+
 
 </head>
 
@@ -259,7 +241,7 @@
            
                <div class="productsblock__wrapper">
                 <div class="productsblock__items">
-                  <div class="productsblock__item">
+                  <div class="productsblock__item slide-in-bottom wow" data-wow-delay="0.1s" data-wow-offset="0" data-wow-duration="1.0s">
                     <div class="productcard">
                       <a href='#' class="productcard__wrapper">
                         <div class="productcard__content">
@@ -289,7 +271,7 @@
                       </a><!-- /.productcard__wrapper -->
                     </div><!-- /.productcard -->
                   </div><!-- /.productsblock__item -->
-                  <div class="productsblock__item">
+                  <div class="productsblock__item slide-in-bottom wow" data-wow-delay="0.3s" data-wow-offset="0" data-wow-duration="1.0s">
                     <div class="productcard">
                       <a href='#' class="productcard__wrapper">
                         <div class="productcard__content">
@@ -319,7 +301,7 @@
                       </a><!-- /.productcard__wrapper -->
                     </div><!-- /.productcard -->
                   </div><!-- /.productsblock__item -->
-                  <div class="productsblock__item">
+                  <div class="productsblock__item  slide-in-bottom wow" data-wow-delay="0.5s" data-wow-offset="0" data-wow-duration="1.0s">
                     <div class="productcard">
                       <a href='#' class="productcard__wrapper">
                         <div class="productcard__content">
@@ -349,7 +331,7 @@
                       </a><!-- /.productcard__wrapper -->
                     </div><!-- /.productcard -->
                   </div><!-- /.productsblock__item -->
-                  <div class="productsblock__item">
+                  <div class="productsblock__item slide-in-bottom wow" data-wow-delay="0.7s" data-wow-offset="0" data-wow-duration="1.0s">
                     <div class="productcard">
                       <a href='#' class="productcard__wrapper">
                         <div class="productcard__content">
@@ -505,5 +487,20 @@
   </div><!-- /.footer__bottom -->
 </footer>
 
+<div class="modal modal_video  fade " tabindex="-1" role="dialog" id="modal_video">
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
+        </button>
+        <div class="modal__content ">
+            <div id="video-view"></div>
+        </div><!-- /.modal__content -->
+       
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/index.js"></script>

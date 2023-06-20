@@ -34,6 +34,22 @@
   max-width: 100%;
 }
 
+.modal_video {
+  .modal-content {
+    padding: 0;
+  }
+  .modal-dialog {
+    width: 900px;
+    max-width: 100%;
+  }
+  
+iframe {
+  width: 100% !important;
+  height: 480px !important;
+}
+
+}
+
 .modal-body {
   padding: 20px;
   overflow-y: auto;
@@ -386,6 +402,15 @@ color: #FFFFFF;
  
 
 @include medium-screen {
+  .modal_video {
+
+    
+  iframe {
+    width: 100% !important;
+    height: 280px !important;
+  }
+  
+  }
   .fileupload span {
     font-size: 14px;
 line-height: 130%;

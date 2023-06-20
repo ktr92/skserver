@@ -37,14 +37,8 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/jquery.dmenu.css">
-
-  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/slick.min.css">
   <link rel="stylesheet" href="css/slick-theme.min.css">
-  <!--   <link rel="stylesheet" href="css/lightbox.min.css"> -->
-  <!--   <link rel="stylesheet" href="css/flatpickr.min.css"> -->
   <link rel="stylesheet" href="css/style.bundle.css" />
 
 
@@ -52,21 +46,9 @@
   <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/maskedinput.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-  <!--   <script src="js/hover-slider.min.js"></script> -->
   <script src="js/slick.min.js"></script>
-  <script src="js/jquery.dmenu.js"></script>
-  <script src="js/fixedcart.js"></script>
 
-  <!--   <script src="js/selectbox.js"></script> -->
-  <!--   <script src="js/jquery-ui.js"></script> -->
-  <!--   <script src="js/filter.js"></script> -->
-    <script src="js/jquery.zoom.min.js"></script>
-  <!--   <script src="js/lightbox.min.js"></script> -->
-  <!--   <script src="js/jquery.lazy.min.js"></script>
-  <script src="js/jquery.lazy.youtube.min.js"></script> -->
-  <!--   <script src="js/fixedcart.js"></script> -->
-  <!--   <script src="js/flatpickr.js"></script> -->
+
 
 </head>
 
@@ -299,9 +281,11 @@
           <div class="pagevideoblock">
             <div class="container pagevideo">
               <div class="pagevideo__video">
-                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" muted="muted" loop="loop" playsinline="playsinline" controls>
-                  <source src="img/v.webm" type="video/mp4">
-              </video>
+                <a class="youtubepopup" href="#!" data-ytlink="//www.youtube.com/embed/ECJa4PmQvVo?enablejsapi=1" tabindex="0">
+                  <div class="pagevideo__img">
+                    <img src="img/ECJa4PmQvVo.png" alt="">
+                  </div><!-- /.pagevideo__img -->
+                </a>
               </div><!-- /.pagevideo__video -->
             </div><!-- /.container pagevideo -->
           </div><!-- /.pagevideoblock -->
@@ -467,5 +451,20 @@
   </div><!-- /.footer__bottom -->
 </footer>
 
+<div class="modal modal_video  fade " tabindex="-1" role="dialog" id="modal_video">
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
+        </button>
+        <div class="modal__content ">
+            <div id="video-view"></div>
+        </div><!-- /.modal__content -->
+       
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/index.js"></script>
