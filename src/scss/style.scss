@@ -1382,7 +1382,7 @@ color: #FFFFFF;
 
 .wavebgblock {
   background-image: url(../img/wavebg.png);
-  background-position: top center;
+  background-position: top -15px center;
   background-repeat: no-repeat;
   padding-top: 108px;
   padding-bottom: 62px;
@@ -2449,4 +2449,102 @@ border: 1.5px solid #28323F;
 .mapblock__map {
   border-radius: 12px;
   overflow: hidden;
+}
+
+.pageheaderblock {
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutimage {
+  background: linear-gradient(90deg, #10131B 0%, rgba(16, 19, 27, 0) 17.94%), linear-gradient(180deg, #10131B 16.15%, rgba(16, 19, 27, 0) 50%), linear-gradient(180deg, rgba(16, 19, 27, 0) 61.46%, #10131B 100%), url(../img/about.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  .pageheaderblock__content {
+    min-height: 385px;
+  }
+}
+
+.wavebgblock {}
+
+.wavebgblock_bottom {
+  background-image: url(../img/wavebg_bottom.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-bottom: 250px;
+}
+.pagevideoblock {
+  margin-top: -130px;
+}
+
+.pagevideo {
+  position: relative;
+
+/*   &:after {
+    align-items: center;
+    bottom: -9999px;
+    content: url(../img/play.svg);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+    width: 100%;
+} */
+}
+
+.docsection {
+  margin-top: 97px;
+  padding-bottom: 100px;
+}
+.docsection__wrapper {
+  background-image: url(../img/docsection.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  background-size: contain;
+}
+.docsection__content {
+}
+.docsection__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -11px;
+}
+.docsection__item {
+  width: 33.33333%;
+  padding: 0 11px;
+}
+.blockicon {
+}
+.blockicon__link {
+  display: flex;
+  padding: 15px;
+  min-height: 237px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(0deg, #191D28, #191D28), #D9D9D9;
+border-radius: 12px;
+border: 1px solid rgba(40, 50, 63, 1);
+}
+.blockicon__icon {
+  margin-bottom: 33px;
+}
+.blockicon__title {
+  font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
 }
